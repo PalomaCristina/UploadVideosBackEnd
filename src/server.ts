@@ -16,11 +16,12 @@ app.register(getAllPromptsRoute)
 app.register(uploadVideoPrompt)
 app.register(createTranscriptionRoute)
 app.register(generateAiCompletionRoute)
+
+const PORT = 3333;
+
 app.listen({
-    port: 3333,
+    port: PORT
 }).then(() => {
-    console.log('HTTP Server Running perfectly!');
+    console.log(`HTTP Server Running perfectly! on port  ${PORT}`);
     
 })
-
-//DDL declaração do schema
